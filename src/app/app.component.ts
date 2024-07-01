@@ -5,7 +5,14 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  template: `<main><h1>Hello world</h1></main>`,
+  template: `<div>
+    <header class="">
+      <div class="container">Header</div>
+    </header>
+    <main>
+      <div class="container">Main</div>
+    </main>
+  </div>`,
 })
 export class AppComponent {
   title = 'my-portfolio';
