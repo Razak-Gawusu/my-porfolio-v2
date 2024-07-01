@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "reset";
+@import "variables";
+@import "layer-base";
+@import "layer-utilities";
+@import "layer-components";
