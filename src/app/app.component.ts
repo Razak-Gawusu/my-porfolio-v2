@@ -10,7 +10,7 @@ import { HeaderComponent } from './components/Header';
   imports: [RouterOutlet, LucideAngularModule, IconComponent, HeaderComponent],
   template: `<div>
     <app-header></app-header>
-    <main class="container px-6 pt-6 pb-80 bg-slate-100">
+    <main class="container py-[154px]">
       <router-outlet></router-outlet>
     </main>
   </div>`,

@@ -1,0 +1,23 @@
+<header class="sticky top-0 z-10 bg-slate-100">
+  <div
+    class="container py-6 flex justify-between items-center text-lg text-slate-500"
+  >
+    <div class="flex gap-1 items-center">
+      <span class="p-3 bg-slate-800 text-white rounded-full font-medium"
+        >GR</span
+      >
+      <p class="text-slate-800">Gawusu Razak</p>
+    </div>
+    <nav class="flex gap-12 text-slate-800">
+      <a
+        routerLink="/"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a
+      >
+      <a routerLink="/projects" routerLinkActive="active-link">Projects</a>
+      <a routerLink="/about" routerLinkActive="active-link">About Me</a>
+      <a routerLink="/contact" routerLinkActive="active-link">Contact</a>
+    </nav>
+  </div>
+</header>
