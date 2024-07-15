@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         cantarell: ["Cantarell", "sans-serif"],
         fjalla: ["'Fjalla One'", "serif"],
+        lora: ["Lora", "serif"],
       },
     },
   },
