@@ -16,7 +16,7 @@ import { VariantService } from '../../utils/styleVariants.service';
       (click)="onClick($event)"
       [type]="type"
       [disabled]="disabled"
-      [class]="cn(buttonVariants({ variant, size }))"
+      [class]="cn(buttonVariants({ variant, size }), 'flex gap-2 items-center', class)"
     >
       <app-icon
         *ngIf="isLoading; else show"
@@ -36,7 +36,7 @@ export class ButtonComponent {
   buttonVariants;
   @Input() class?: string;
   @Input() isLoading?: boolean;
-  @Input() disabled?: boolean; 
+  @Input() disabled?: boolean;
   @Input() type?: 'button' | 'submit' | 'reset' | 'menu';
   @Input() size?: VariantProps<typeof this.variants.buttonVariants>['size'];
   @Input() variant?: VariantProps<

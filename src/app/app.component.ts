@@ -10,9 +10,13 @@ import { HeaderComponent } from './components/Header';
   imports: [RouterOutlet, LucideAngularModule, IconComponent, HeaderComponent],
   template: `<div>
     <app-header></app-header>
-    <main class="container py-[154px]">
+    <main class="container">
       <router-outlet></router-outlet>
     </main>
+
+    <footer class="container flex justify-end">
+      Gawusu Razak © 2024. All Right Reserved
+    </footer>
   </div>`,
 })
 export class AppComponent {

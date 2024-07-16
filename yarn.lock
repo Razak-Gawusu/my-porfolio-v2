@@ -1529,6 +1529,13 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.20.1.tgz#77583b6ea54cee7c1410ebbd54051b6a3fcbd8ba"
   integrity sha512-0MBh53o6XtI6ctDnRMeQ+xoCN8kD2qI1rY1KgF/xdWQwoFeKou7puvDfV8/Wv4Ctx2rRpET/gGdz3YlNtNACSA==
 
+"@geometricpanda/angular-tilt@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@geometricpanda/angular-tilt/-/angular-tilt-0.4.0.tgz#292a6f1f71a1839013e8409d36924508ef140afb"
+  integrity sha512-UiwzEzpWd5XvEcefS0h8hEZq1VSnEplN+1r+q7O22FnlcZrcCsQWPLcmdUehHZmZ332mqwTXRJ6EIcxumHwZcw==
+  dependencies:
+    tslib "^2.3.0"
+
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/@isaacs/cliui/-/cliui-8.0.2.tgz#b37667b7bc181c168782259bab42474fbf52b550"

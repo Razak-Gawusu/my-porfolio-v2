@@ -10,11 +10,12 @@ export class VariantService {
     {
       variants: {
         variant: {
-          default: 'bg-slate-900 text-white hover:bg-slate-700',
-          destructive: 'bg-red-500 text-white hover:bg-red-600',
+          default: 'bg-slate-900 text-white hover:bg-slate-600',
+          secondary: 'bg-teal-700 text-white hover:bg-teal-900',
           outline: 'border border-[#CDD3D3] bg-white hover:bg-gray-100',
-          ghost: 'hover:bg-transparent hover:text-black',
           link: 'text-black hover:underline',
+          destructive: 'bg-red-500 text-white hover:bg-red-600',
+          ghost: 'bg-transparent hover:text-teal-700',
           white: 'bg-white text-red-500',
         },
         size: {
