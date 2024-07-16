@@ -1,1 +1,1 @@
-export type IconNames = 'Clock';
+export type IconNames = 'Clock' | 'OwnkeyIcon';
