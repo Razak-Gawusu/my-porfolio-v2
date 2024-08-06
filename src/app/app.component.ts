@@ -14,7 +14,7 @@ import { HeaderComponent } from './components/Header';
       <router-outlet></router-outlet>
     </main>
 
-    <footer class="container flex justify-end">
+    <footer class="container flex max-sm:justify-center md:justify-end mt-20">
       Gawusu Razak © 2024. All Right Reserved
     </footer>
   </div>`,

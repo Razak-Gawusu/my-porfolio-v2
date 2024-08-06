@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
           <p class="text-xl ">Hi. I'm Gawusu</p>
           <lucide-icon name="hand" />
         </div>
-        <h1 class="font-lora text-8xl leading-[80px]">
+        <h1 class="font-lora text-7xl md:text-8xl leading-[80px]">
           <span class="text-teal-700">Fullstack</span> Engineer
         </h1>
         <p class="text-xl max-w-[684px]">
@@ -25,12 +25,12 @@ import { RouterModule } from '@angular/router';
 
       <div class="flex flex-col gap-4 sm:flex-row">
         <a href="mailto:gawusur@gmail.com">
-          <app-button size="lg" variant="secondary"
+          <app-button size="lg" variant="secondary" class="max-sm:w-full"
             >Get in touch<lucide-icon name="phone" [size]="20"
           /></app-button>
         </a>
         <a routerLink="/projects">
-          <app-button size="lg"
+          <app-button size="lg" class="max-sm:w-full"
             >View projects <lucide-icon name="mail" [size]="20" />
           </app-button>
         </a>

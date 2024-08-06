@@ -10,7 +10,7 @@ import {
 @Component({
   selector: 'app-home',
   standalone: true,
-  template: `<div class="grid py-36 gap-12 md:gap-48">
+  template: `<div class="grid py-16 md:py-36 gap-32 md:gap-48">
     <app-hero />
     <app-skills />
     <app-projects />
