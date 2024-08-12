@@ -46,23 +46,25 @@ import { IProject } from '../../interfaces';
           />
         </div>
         <div
-          class="bg-teal-700 rounded-2xl p-4 md:px-16 md:py-10 flex flex-col justify-between"
+          class="bg-teal-700 rounded-2xl p-4 md:px-12 md:py-8 flex flex-col justify-between"
         >
           <img
             src="/assets/icons/ownkey-icon.svg"
             alt=""
-            class="w-16 md:w-36 h-16 md:h-36"
+            class="w-16 md:w-24 h-16 md:h-24"
           />
-          <div class="space-y-2">
-            <div class="bg-zinc-200 rounded-lg overflow-hidden p-[5px]">
+          <div class="flex flex-col grow h-full">
+            <div class="bg-zinc-200 grow rounded-lg overflow-hidden p-[5px]">
               <img
                 [src]="mainProject.imgSrc"
                 [alt]="mainProject.name"
-                class="rounded-lg"
+                class="rounded-lg object-cover h-full w-full"
               />
             </div>
             <a [href]="mainProject.link" target="_blank" class="text-white">
-              <app-button variant="ghost" class="!p-0"
+              <app-button
+                variant="ghost"
+                class="!p-0 !drop-shadow-md !text-white"
                 >{{ mainProject.name }}
                 <lucide-icon [size]="20" name="externalLink"
               /></app-button>

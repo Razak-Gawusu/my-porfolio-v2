@@ -15,7 +15,7 @@ import { LucideAngularModule } from 'lucide-angular';
         class="absolute bottom-0 w-full h-16 bg-teal-700/50 flex items-center px-4"
       >
         <a [href]="link ? link : '#'" target="_blank">
-          <app-button variant="ghost" class="!p-0"
+          <app-button variant="ghost" class="!p-0 !drop-shadow-md !text-white"
             >{{ name }} <lucide-icon [size]="20" name="externalLink"
           /></app-button>
         </a>

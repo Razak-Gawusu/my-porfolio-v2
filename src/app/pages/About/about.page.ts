@@ -12,30 +12,6 @@ import { LucideAngularModule } from 'lucide-angular';
         Hey I'm Gawusu - a <span class="text-teal-700">fullstack</span> engineer
         with experience of crafting innovative web projects.
       </h2>
-
-      <!-- <p>
-        I build things with React, Vue and Angular with their ecosystem of
-        tooling. Before specializing in the frontend. I was a full-stack
-        developer putting together enterprise-scale websites. I enjoy
-        challenging Chrome and Satari to a battle of wits
-        <em>(or patience)</em>, and architecting simple solutions to complex
-        problems.
-      </p>
-
-      <p>
-        I've worked with a wide range of teams, from startups to Fortune 500
-        companies; typically in a principal technical role. Usually I partner
-        with agencies, design studios, or startups to provide sprints or tocused
-        dev work.
-      </p>
-
-      <p>
-        On a personal note... I live in Orlando FL with my wife and daughter. I
-        want to sav that I'm a big fan of the outdoors and that I like long
-        walks on the beach; but instead my passion Is programming so I'm usually
-        just at my desk.
-      </p> -->
-
       <p>
         As a versatile full-stack engineer proficient in React, Vue, Angular,
         Node.js, and Express, I possess a strong foundation in building dynamic
@@ -73,7 +49,7 @@ import { LucideAngularModule } from 'lucide-angular';
     </div>
 
     <div>
-      <app-button class="px-12 w-max" variant="secondary">
+      <app-button class="px-12 w-max" variant="secondary" size="lg">
         <span class="flex gap-2 items-center">
           <lucide-icon name="send" color="white" [size]="16"></lucide-icon>
           Let's chat

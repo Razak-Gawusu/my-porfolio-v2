@@ -12,7 +12,17 @@ export class ProjectService {
       link: 'https://kreditafrica.enyata.com',
       imgSrc: 'assets/images/kreditafrica-auth.png',
       techStack: ['React', 'Tailwind', 'Vitest'],
-      description: 'lorem init',
+      description:
+        'Software to provide innovative credit-related data and solutions to organizations and individuals.',
+    },
+    {
+      id: 4,
+      name: 'HRMS',
+      link: 'https://ghana-hrms.enyata.com/',
+      imgSrc: 'assets/images/hrms-dashboard.webp',
+      techStack: ['React', 'ChakraUI', 'GraphQL'],
+      description:
+        'Software to manage Human Resource in a company from Hiring, to Assessments, to Employee management.',
     },
     {
       id: 2,
@@ -20,7 +30,8 @@ export class ProjectService {
       link: 'https://purple-vest.enyata.com',
       imgSrc: 'assets/images/mypurplepay-auth.png',
       techStack: ['React', 'Tailwind', 'Vitest'],
-      description: 'lorem init',
+      description:
+        'Managing individuals and organizations saving, thrift communities and loans.',
     },
     {
       id: 3,
@@ -28,7 +39,16 @@ export class ProjectService {
       link: 'https://ownkey.com',
       imgSrc: 'assets/images/ownkey-site.png',
       techStack: ['NextJs', 'Tailwind', 'Google Map API', 'Firebase'],
-      description: 'lorem init',
+      description:
+        'Ownkey is an online platform that allows users to find, rent, buy, and sell real estate properties in Accra.',
+    },
+    {
+      id: 5,
+      name: 'Portfolio',
+      link: '#',
+      imgSrc: 'assets/images/portfolio-site.png',
+      techStack: ['Angular', 'Tailwind', 'SCSS'],
+      description: `The site you're currently scrolling.`,
     },
   ];
 }
