@@ -11,9 +11,9 @@ import { LucideAngularModule } from 'lucide-angular';
       <h2 class="font-lora text-5xl leading-[60px]">Let's Chat</h2>
 
       <p>
-        In 2024 - alongside my ongoing projects I'm keen to explore additional
-        opportunities that spark creativity and challenge. If you have a project
-        in mind, feel free to schedule a time to chal.
+        In 2024 - alongside my ongoing personal projects I'm keen to explore
+        additional opportunities that spark creativity and challenge. If you
+        have a project in mind, feel free to schedule a time to chat.
       </p>
       <div>
         <app-button class="px-12 w-max" variant="secondary">
