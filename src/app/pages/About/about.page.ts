@@ -13,7 +13,7 @@ import { LucideAngularModule } from 'lucide-angular';
         with experience of crafting innovative web projects.
       </h2>
 
-      <p>
+      <!-- <p>
         I build things with React, Vue and Angular with their ecosystem of
         tooling. Before specializing in the frontend. I was a full-stack
         developer putting together enterprise-scale websites. I enjoy
@@ -34,23 +34,42 @@ import { LucideAngularModule } from 'lucide-angular';
         want to sav that I'm a big fan of the outdoors and that I like long
         walks on the beach; but instead my passion Is programming so I'm usually
         just at my desk.
+      </p> -->
+
+      <p>
+        As a versatile full-stack engineer proficient in React, Vue, Angular,
+        Node.js, and Express, I possess a strong foundation in building dynamic
+        and user-centric applications. My experience spans diverse domains,
+        including HR management systems, fintech solutions, and real estate
+        platforms.
+      </p>
+
+      <p>
+        I’ve contributed significantly to projects such as HRMS, where I
+        developed robust tools for hiring, assessments, and employee management.
+        At Kreditafrica, I played a key role in creating innovative
+        credit-related solutions, and at Ownkey, a real estate marketplace.
+      </p>
+
+      <p>
+        My latest venture, Mypurplepay, involved developing a comprehensive
+        platform for managing savings, thrift communities, and loans.
+      </p>
+
+      <p>
+        These projects have honed my ability to architect and implement complex
+        systems while delivering exceptional user experiences. I am eager to
+        leverage my skills to tackle complex challenges and create impactful
+        solutions that address generational problems.
       </p>
     </div>
 
     <div>
       <h3 class="font-lora font-semibold">Availability</h3>
-      <div>
-        <p>
-          I'm interested in colaboratina with beoole Who are buildina creative
-          websites interactive experiences, or bespoke interraces - especiallv
-          those with grapnics so intense that my GPU catches fire 0.
-        </p>
-        <p>
-          Whlle awas have some sort or ongoina work. I'm oben to discussina new
-          opportunities. If you have a project in mind, don't hesitate to reach
-          out.
-        </p>
-      </div>
+      <p>
+        I'm keen to explore additional opportunities that spark creativity and
+        challenge.
+      </p>
     </div>
 
     <div>
