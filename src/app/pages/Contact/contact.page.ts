@@ -16,7 +16,7 @@ import { LucideAngularModule } from 'lucide-angular';
         have a project in mind, feel free to schedule a time to chat.
       </p>
       <div>
-        <app-button class="px-12 w-max" variant="secondary">
+        <app-button class="px-12 w-max" variant="secondary" size="lg">
           <span class="flex gap-2 items-center">
             <lucide-icon name="send" color="white" [size]="16"></lucide-icon>
             Let's chat
@@ -28,7 +28,14 @@ import { LucideAngularModule } from 'lucide-angular';
     <div>
       <h3 class="font-lora font-semibold">Alternate contact options</h3>
       <div>
-        You can find me on Twitter /&#64;gawusurazak or emall me at
+        You can find me on Twitter /&#64;gawusurazak,
+        <a
+          class="font-bold underline text-teal-700"
+          href="https://www.linkedin.com/in/gawusu-razak-567732174/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        or emall me at
         <a
           href="mailto:gawusur@gmail.com"
           class="font-bold underline text-teal-700"

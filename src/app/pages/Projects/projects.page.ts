@@ -25,6 +25,7 @@ import { CommonModule } from '@angular/common';
         [src]="project.imgSrc"
         [link]="project.link"
         [techStack]="project.techStack"
+        [desc]="project.description"
       />
     </div>
   </div>`,

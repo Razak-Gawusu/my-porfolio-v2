@@ -25,13 +25,16 @@ import { CommonModule } from '@angular/common';
         </div>
       </div>
 
-      <div class="rounded-2xl overflow-hidden p-1.5 bg-teal-700/50 ">
-        <img [src]="src" [alt]="name" class="rounded-2xl" />
+      <div
+        class="rounded-2xl overflow-hidden p-1.5 bg-teal-700/50 md:h-[420px]"
+      >
+        <img
+          [src]="src"
+          [alt]="name"
+          class="rounded-2xl h-full w-full object-cover"
+        />
       </div>
-      <div class="px-6 py-1 bg-white bottom-0 md:w-3/4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aut
-        ad perferendis distinctio.
-      </div>
+      <div class="px-6 py-1 bg-white bottom-0 md:w-3/4">{{ desc }}</div>
     </div>
   `,
 })
@@ -39,5 +42,6 @@ export class AltSingleProjectComponent {
   @Input() name!: string;
   @Input() link?: string;
   @Input() src!: string;
+  @Input() desc?: string;
   @Input() techStack?: string[];
 }
