@@ -6,13 +6,11 @@ import { LucideAngularModule } from 'lucide-angular';
   selector: 'app-about',
   standalone: true,
   imports: [ButtonComponent, LucideAngularModule],
-  template: `<div class="max-w-[670px] mx-auto grid gap-8">
-    <div class="w-24 h-24 rounded-md bg-slate-100"></div>
-
+  template: `<div class="max-w-[670px] mx-auto grid gap-8 py-16 md:py-36 ">
     <div class="grid gap-4">
-      <h2 class="font-fjalla text-5xl leading-[60px]">
-        Hey I'm Gawusu - a fullstack engineer with experience of crafting
-        innovative web projects.
+      <h2 class="font-lora text-5xl leading-[60px]">
+        Hey I'm Gawusu - a <span class="text-teal-700">fullstack</span> engineer
+        with experience of crafting innovative web projects.
       </h2>
 
       <p>
@@ -40,7 +38,7 @@ import { LucideAngularModule } from 'lucide-angular';
     </div>
 
     <div>
-      <h3 class="font-fjalla">Availability</h3>
+      <h3 class="font-lora font-semibold">Availability</h3>
       <div>
         <p>
           I'm interested in colaboratina with beoole Who are buildina creative
@@ -56,7 +54,7 @@ import { LucideAngularModule } from 'lucide-angular';
     </div>
 
     <div>
-      <app-button class="px-12 w-max">
+      <app-button class="px-12 w-max" variant="secondary">
         <span class="flex gap-2 items-center">
           <lucide-icon name="send" color="white" [size]="16"></lucide-icon>
           Let's chat
