@@ -79,20 +79,26 @@ export class ProjectsComponent {
       id: 1,
       name: 'Kreditafrica',
       link: 'https://kreditafrica.enyata.com',
-      imgSrc: 'assets/images/kreditafrica.webp',
+      imgSrc: 'assets/images/kreditafrica-auth.png',
+      techStack: ['React', 'Tailwind', 'Vitest'],
+      description: 'lorem init',
     },
     {
       id: 2,
       name: 'My Purple Pay',
       link: 'https://purple-vest.enyata.com',
-      imgSrc: 'assets/images/mypurplepay-login.webp',
+      imgSrc: 'assets/images/mypurplepay-auth.png',
+      techStack: ['React', 'Tailwind', 'Vitest'],
+      description: 'lorem init',
     },
   ];
 
   mainProject: IProject = {
-    id: 1,
+    id: 3,
     name: 'Ownkey',
     link: 'https://ownkey.com',
-    imgSrc: 'assets/images/ownkey.webp',
+    imgSrc: 'assets/images/ownkey-site.png',
+    techStack: ['NextJs', 'Tailwind', 'Google Map API', 'Firebase'],
+    description: 'lorem init',
   };
 }

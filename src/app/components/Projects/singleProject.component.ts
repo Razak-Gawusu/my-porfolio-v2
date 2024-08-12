@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ButtonComponent } from '../Button/button.component';
 import { LucideAngularModule } from 'lucide-angular';
-import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-single-project',
