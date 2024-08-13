@@ -8,7 +8,7 @@ import { LucideAngularModule } from 'lucide-angular';
   imports: [ButtonComponent, LucideAngularModule],
   template: `<div class="max-w-[670px] mx-auto grid gap-8 py-16 md:py-36">
     <div class="grid gap-4">
-      <h2 class="font-lora text-5xl leading-[60px]">Let's Chat</h2>
+      <h2 class="font-lora text-4xl md:text-5xl leading-[60px]">Let's Chat</h2>
 
       <p>
         In 2024 - alongside my ongoing personal projects I'm keen to explore
