@@ -22,15 +22,21 @@ import { IProject } from '../../interfaces';
     <section class="space-y-8">
       <div class="flex flex-col md:flex-row justify-between">
         <div class="space-y-2">
-          <h2 class="font-lora text-5xl text-neutral-800">Projects.</h2>
-          <p class="text-xl max-w-[430px]">
+          <h2 class="font-lora text-2xl md:text-5xl text-neutral-800">
+            Projects.
+          </h2>
+          <p class="md:text-xl max-w-[430px]">
             Here are some of the projects I've worked on. A collection of both
             client and side projects.
           </p>
         </div>
 
         <a routerLink="/projects" rout href="">
-          <app-button size="lg" variant="ghost" class="self-end" class="!px-0"
+          <app-button
+            size="default"
+            variant="ghost"
+            class="self-end"
+            class="!px-0"
             >View More <lucide-icon name="move-right" />
           </app-button>
         </a>
