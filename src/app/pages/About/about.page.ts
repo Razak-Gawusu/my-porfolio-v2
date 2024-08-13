@@ -8,9 +8,10 @@ import { LucideAngularModule } from 'lucide-angular';
   imports: [ButtonComponent, LucideAngularModule],
   template: `<div class="max-w-[670px] mx-auto grid gap-8 py-16 md:py-36 ">
     <div class="grid gap-4">
-      <h2 class="font-lora text-5xl leading-[60px]">
-        Hey I'm Gawusu - a <span class="text-teal-700">fullstack</span> engineer
-        with experience of crafting innovative web projects.
+      <h2 class="font-lora text-4xl md:text-5xl leading-[60px]">
+        Hey, I'm Gawusu - a
+        <span class="text-teal-700">full-stack</span> engineer with experience
+        in crafting innovative web projects.
       </h2>
       <p>
         As a versatile full-stack engineer proficient in React, Vue, Angular,

@@ -22,7 +22,7 @@ export class ProjectService {
       imgSrc: 'assets/images/hrms-dashboard.webp',
       techStack: ['React', 'ChakraUI', 'GraphQL'],
       description:
-        'Software to manage Human Resource in a company from Hiring, to Assessments, to Employee management.',
+        'Software to manage Human resources in a company from Hiring, to Assessments, to Employee management.',
     },
     {
       id: 2,
@@ -30,8 +30,7 @@ export class ProjectService {
       link: 'https://purple-vest.enyata.com',
       imgSrc: 'assets/images/mypurplepay-auth.png',
       techStack: ['React', 'Tailwind', 'Vitest'],
-      description:
-        'Managing individuals and organizations saving, thrift communities and loans.',
+      description: `Managing individual's and organizations' savings, thrift communities, and loans.`,
     },
     {
       id: 3,
