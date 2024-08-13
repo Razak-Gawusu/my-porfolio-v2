@@ -11,6 +11,7 @@
           <p class="text-slate-800 font-medium">Gawusu Razak</p>
         </div>
       </a>
+
       <nav class="hidden gap-12 text-slate-800 md:flex">
         <a
           routerLink="/"
@@ -23,15 +24,14 @@
         <a routerLink="/contact" routerLinkActive="active-link">Contact</a>
       </nav>
 
-      <app-button
-        variant="ghost"
-        (click)="toggleMenu()"
+      <button
+        (click)="toggleSidebar()"
         class="sm:hidden text-neutral-800 !px-0"
       >
         <lucide-icon name="Menu" />
-      </app-button>
+      </button>
     </div>
   </header>
 
-  <app-mobile-nav [isMenuOpen]="isMenuOpen" />
+  <app-mobile-nav [isOpen]="isOpen" (toggleSidebar)="toggleSidebar()" />
 </div>

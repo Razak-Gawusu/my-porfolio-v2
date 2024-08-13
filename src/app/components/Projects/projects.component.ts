@@ -22,7 +22,7 @@ import { IProject } from '../../interfaces';
     <section class="space-y-8">
       <div class="flex flex-col md:flex-row justify-between">
         <div class="space-y-2">
-          <h2 class="font-lora text-2xl md:text-5xl text-neutral-800">
+          <h2 class="font-lora text-3xl md:text-5xl text-neutral-800">
             Projects.
           </h2>
           <p class="md:text-xl max-w-[430px]">
