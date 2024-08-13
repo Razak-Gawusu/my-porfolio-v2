@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
             >{{ name }} <lucide-icon [size]="20" name="externalLink"
           /></app-button>
         </a>
-        <div class="flex items-center gap-2 text-xs overflow-x-auto">
+        <div class="flex items-center gap-2 text-xs">
           <div
             *ngFor="let tech of techStack"
             class="border-2 border-teal-700 px-4 py-1 rounded-full"

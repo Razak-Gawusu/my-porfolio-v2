@@ -8,8 +8,8 @@ import { TooltipComponent } from '../Tooltip/tooltip.component';
   template: `
     <section class="space-y-8">
       <div class="max-w-md">
-        <h2 class="font-lora text-5xl text-slate-800">Skills.</h2>
-        <p class="text-xl">Technologies I'm comfortable with.</p>
+        <h2 class="font-lora text-2xl md:text-5xl text-slate-800">Skills.</h2>
+        <p class="md:text-xl">Technologies I'm comfortable with.</p>
       </div>
 
       <div class="flex gap-8 items-center overflow-x-auto noscroll-indicator">

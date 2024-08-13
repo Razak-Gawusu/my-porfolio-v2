@@ -1,25 +1,37 @@
-<header class="sticky top-0 z-10">
-  <div
-    class="container bg-white py-6 flex justify-between items-center text-lg text-slate-500"
-  >
-    <a routerLink="">
-      <div class="flex gap-1 items-center">
-        <span class="p-3 bg-teal-700 text-white rounded-full font-medium"
-          >GR</span
+<div>
+  <header class="sticky top-0 z-10">
+    <div
+      class="container bg-white py-6 flex justify-between items-center text-lg text-slate-500"
+    >
+      <a routerLink="">
+        <div class="flex gap-1 items-center">
+          <span class="p-3 bg-teal-700 text-white rounded-full font-medium"
+            >GR</span
+          >
+          <p class="text-slate-800 font-medium">Gawusu Razak</p>
+        </div>
+      </a>
+      <nav class="hidden gap-12 text-slate-800 md:flex">
+        <a
+          routerLink="/"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
         >
-        <p class="text-slate-800 font-medium">Gawusu Razak</p>
-      </div>
-    </a>
-    <nav class="hidden gap-12 text-slate-800 md:flex">
-      <a
-        routerLink="/"
-        routerLinkActive="active-link"
-        [routerLinkActiveOptions]="{ exact: true }"
-        >Home</a
+        <a routerLink="/projects" routerLinkActive="active-link">Projects</a>
+        <a routerLink="/about" routerLinkActive="active-link">About Me</a>
+        <a routerLink="/contact" routerLinkActive="active-link">Contact</a>
+      </nav>
+
+      <app-button
+        variant="ghost"
+        (click)="toggleMenu()"
+        class="sm:hidden text-neutral-800 !px-0"
       >
-      <a routerLink="/projects" routerLinkActive="active-link">Projects</a>
-      <a routerLink="/about" routerLinkActive="active-link">About Me</a>
-      <a routerLink="/contact" routerLinkActive="active-link">Contact</a>
-    </nav>
-  </div>
-</header>
+        <lucide-icon name="Menu" />
+      </app-button>
+    </div>
+  </header>
+
+  <app-mobile-nav [isMenuOpen]="isMenuOpen" />
+</div>
