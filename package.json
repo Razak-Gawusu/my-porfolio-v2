@@ -49,5 +49,10 @@
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.4",
     "typescript": "~5.3.2"
+  },
+  "resolutions": {
+    "strip-ansi": "6.0.1",
+    "string-width": "4.2.2",
+    "wrap-ansi": "7.0.0"
   }
 }

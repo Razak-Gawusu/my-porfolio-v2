@@ -1,8 +1,16 @@
-import { Component, Input, WritableSignal } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  WritableSignal,
+} from '@angular/core';
 import { HelperService } from '../../utils/helper.service';
 import { ClassValue } from 'clsx';
 import { LucideAngularModule } from 'lucide-angular';
 import { ButtonComponent } from '../Button';
+import { SharedDataService } from '../../services';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-mobile-nav',
@@ -10,42 +18,39 @@ import { ButtonComponent } from '../Button';
   template: `<div
     [class]="
       cn(
-        'hidden absolute top-0 bg-teal-700 py-5 px-6 max-sm:flex flex-col gap-6 h-full w-screen overflow-y-auto noscroll-indicator transition-all duration-300 ease-in z-20',
+        'hidden absolute top-0 bg-teal-700 px-6 py-8 max-sm:flex flex-col gap-6 h-full w-screen overflow-y-auto noscroll-indicator transition-all duration-300 ease-in z-20',
         'max-md:left-[-100%] max-md:fixed',
-        { 'max-md:left-0': isMenuOpen() }
+        { 'max-md:left-0': isOpen() }
       )
     "
   >
-    <app-button
-      variant="ghost"
-      className="w-max text-white !px-0 !bg-red-500"
-      onClick="{toggleSidebar}"
-    >
-      <lucide-icon
-        name="ArrowLeft"
-        [color]="'white'"
-        width="{24}"
-        height="{24}"
-      />
-    </app-button>
-    <nav className="flex flex-col bg-red-500">
-      <a href="#about" onClick="{toggleSidebar}"> About us</a>
-      <a href="#services" onClick="{toggleSidebar}"> Services</a>
-      <a href="#faqs" onClick="{toggleSidebar}"> FAQs </a>
+    <div class="flex justify-end">
+      <button class="w-max text-white !px-0" (click)="toggle()">
+        <lucide-icon name="x" [color]="'white'" width="{24}" height="{24}" />
+      </button>
+    </div>
+
+    <nav class="flex flex-col gap-6 text-white text-2xl">
+      <a routerLink="/" (click)="toggle()">Home</a>
+      <a routerLink="/projects" (click)="toggle()">Projects</a>
+      <a routerLink="/about" (click)="toggle()">About us</a>
+      <a routerLink="/contact" (click)="toggle()">Contact</a>
     </nav>
   </div>`,
-  imports: [LucideAngularModule, ButtonComponent],
+  imports: [LucideAngularModule, ButtonComponent, RouterModule],
 })
 export class AppMobileComponent {
-  @Input() isMenuOpen!: WritableSignal<boolean>;
+  @Input() isOpen!: WritableSignal<boolean>;
+
+  @Output() toggleSidebar = new EventEmitter();
+
   constructor(private helper: HelperService) {}
 
   cn(...inputs: ClassValue[]) {
     return this.helper.cn(inputs);
   }
 
-  toggleMenu() {
-    console.log('mobile', this.isMenuOpen());
-    this.isMenuOpen?.update((prev) => !prev);
+  toggle() {
+    this.toggleSidebar.emit();
   }
 }

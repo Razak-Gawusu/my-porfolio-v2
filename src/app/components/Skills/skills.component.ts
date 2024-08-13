@@ -6,9 +6,9 @@ import { TooltipComponent } from '../Tooltip/tooltip.component';
   standalone: true,
   imports: [TooltipComponent],
   template: `
-    <section class="space-y-8">
+    <section class="space-y-8  max-sm:mt-28">
       <div class="max-w-md">
-        <h2 class="font-lora text-2xl md:text-5xl text-slate-800">Skills.</h2>
+        <h2 class="font-lora text-3xl md:text-5xl text-slate-800">Skills.</h2>
         <p class="md:text-xl">Technologies I'm comfortable with.</p>
       </div>
 

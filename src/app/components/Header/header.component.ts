@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { LucideAngularModule } from 'lucide-angular';
 import { ButtonComponent } from '../Button/button.component';
 import { AppMobileComponent } from './mobile.component';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -12,14 +13,18 @@ import { AppMobileComponent } from './mobile.component';
     LucideAngularModule,
     ButtonComponent,
     AppMobileComponent,
+    NgIf,
   ],
   styleUrls: ['./header.component.scss'],
   templateUrl: './header.component.html',
 })
 export class HeaderComponent {
-  isMenuOpen = signal(false);
-  toggleMenu() {
-    console.log('header', this.isMenuOpen());
-    this.isMenuOpen.update((prev) => !prev);
+  isOpen = signal(false);
+
+  constructor() {}
+
+  toggleSidebar() {
+    console.log(this.isOpen());
+    this.isOpen.update((prev) => !prev);
   }
 }
